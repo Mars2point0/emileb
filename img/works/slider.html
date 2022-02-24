@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .slider {
+            width: 666px;
+            height: 500px;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        
+        .slides {
+            width: 500px;
+            height: 500px;
+            display: flex;
+        }
+        
+        .slides input {
+            display: none;
+        }
+        
+        .slide {
+            transition: 2s;
+        }
+        
+        .slide img {
+            width: 666px;
+            height: 500px;
+        }
+        /* manual slide navigation */
+        
+        .navigation-manual {
+            position: absolute;
+            width: 666px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .manual-btn {
+            border: 3px solid rgb(59, 70, 80);
+            padding: 5px;
+            border-radius: 9px;
+            cursor: pointer;
+            transition: .8s;
+        }
+        
+        .manual-btn:not(:last-child) {
+            margin-right: 40px;
+        }
+        
+        .manual-btn:hover {
+            background: rgb(0, 0, 0);
+        }
+        
+        #radio1:checked~.first {
+            margin-left: 0;
+        }
+        
+        #radio2:checked~.first {
+            margin-left: -666px;
+        }
+        
+        #radio3:checked~.first {
+            margin-left: -1332px;
+        }
+        
+        .works {
+            display: flex;
+            padding: 200px 100px 100px 100px;
+            justify-content: space-between;
+            background: linear-gradient(283.55deg, #01008A 0%, #0169F0 100%);
+        }
+        
+        #work-flex {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #text-contain {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+        }
+        
+        .previous-works {
+            min-width: 400px;
+            width: 400px;
+            transition: .8s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="works">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" class="button" id="radio1">
+                <input type="radio" name="radio-btn" class="button" id="radio2">
+                <input type="radio" name="radio-btn" class="button" id="radio3">
+
+                <div class="slide first"><img src="ecommerce.jpg" alt="Ecommerce"></div>
+                <div class="slide"><img src="landingpage.jpg" alt="LandingPage"></div>
+                <div class="slide"><img src="weatherapi.png" alt="API"></div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        <div id="work-flex">
+            <div style='width:200px;'>
+                <h1 class="headline-text">PREVIOUS<br>WORKS
+                </h1>
+                <hr style="color: white;">
+
+            </div>
+            <div id="text-contain">
+                <div class="previous-works top">heloo ipsum dolor sit amet, consectetur adipiscing elit. Magna hendrerit mus neque malesuada fringilla massa odio lacinia. Tellus enim gravida faucibus ut a eget. Lacus, sed neque mattis mi varius cras cursus. Morbi pretium.</div>
+                <div class="previous-works">helllo ipsum dolor sit amet, consectetur adipiscing elit. Magna hendrerit mus neque malesuada fringilla massa odio lacinia. Tellus enim gravida faucibus ut a eget. Lacus, sed neque mattis mi varius cras cursus. Morbi pretium.</div>
+                <div class="previous-works">hello ipsum dolor sit amet, consectetur adipiscing elit. Magna hendrerit mus neque malesuada fringilla massa odio lacinia. Tellus enim gravida faucibus ut a eget. Lacus, sed neque mattis mi varius cras cursus. Morbi pretium.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
