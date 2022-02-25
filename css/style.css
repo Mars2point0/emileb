@@ -23,10 +23,13 @@ hr {
 /* Landing Section */
 
 #home {
+    display: flex;
+    flex-direction: column;
     height: 680px;
     background: url(../img/01.jpg), #000000;
     background-size: 100%;
     background-repeat: no-repeat;
+    justify-content: space-between;
 }
 
 #navbar {
@@ -37,7 +40,6 @@ hr {
 
 #logo {
     height: 40px;
-    width: auto;
     padding: 10px;
     margin: 10px;
     transition: all .3s ease;
@@ -92,10 +94,9 @@ hr {
 }
 
 #hello {
-    position: absolute;
-    bottom: 100px;
+    width: 600px;
     color: white;
-    margin: 10px 10px 10px 100px;
+    margin: 10px 10px 100px 100px;
     flex-wrap: wrap;
     height: 300px;
 }
@@ -448,4 +449,118 @@ i {
     font-size: 18px;
     text-decoration: none;
     margin-top: 11px;
+}
+
+@media (max-width:500px) {
+    .headline {
+        width: 300px;
+    }
+    #home {
+        margin-left: -75px;
+        height: 500px;
+    }
+    #hello {
+        height: auto;
+        width: 280px;
+        margin-bottom: 25px;
+    }
+    .hi {
+        font-size: 24px;
+        display: inline-block;
+    }
+    .name {
+        font-size: 24px;
+        display: inline-block;
+    }
+    .career {
+        font-size: 36px;
+    }
+    .list-inline {
+        width: 200px;
+    }
+    i {
+        font-size: 18px;
+    }
+    #about,
+    #exp {
+        flex-direction: column;
+        margin-left: -75px;
+        align-items: center;
+    }
+    .headline-text {
+        font-size: 36px;
+    }
+    #bio,
+    #bio2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px 30px 30px 0;
+        font-weight: normal;
+        font-size: 14px;
+        min-width: 300px;
+    }
+    #about-section-right {
+        margin: 0;
+    }
+    #Mars {
+        margin: 0;
+        width: 250px;
+    }
+    #exp {
+        margin-left: 0px;
+    }
+    .skill-flex-text {
+        width: 300px;
+    }
+    .vl {
+        display: none;
+    }
+    #skill-grid {
+        grid-template-rows: 150px 150px 150px;
+        grid-template-columns: 150px 150px;
+    }
+    #works {
+        flex-direction: column;
+        margin-left: 0px;
+        padding: 50px;
+        align-items: center;
+    }
+    .slider {
+        width: 306px;
+        height: 250px;
+    }
+    .slides {
+        width: 250px;
+        height: 250px;
+    }
+    .slide img {
+        width: 306px;
+        height: 250px;
+    }
+    .navigation-manual {
+        width: 306px;
+    }
+    #work-flex {
+        width: 300px;
+    }
+    .previous-works {
+        min-width: 300px;
+        width: 300px;
+    }
+    #radio2:checked~.first {
+        margin-left: -306px;
+    }
+    #radio3:checked~.first {
+        margin-left: -612px;
+    }
+    #contact {
+        flex-direction: column;
+        margin-left: -75px;
+    }
+    #navigation {
+        flex-direction: column;
+    }
+    #navbar {
+        height: 100px;
+        overflow: hidden;
+    }
 }

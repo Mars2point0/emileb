@@ -16,8 +16,9 @@ window.onscroll = function() {
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
-        document.getElementById("navbar").style.background = "#01008A";
+        x = document.getElementById("navbar")
+        x.clientWidth = screen.width;
+        x.style.background = "#01008A";
     } else {
 
         document.getElementById("navbar").style.background = "none";
@@ -66,7 +67,8 @@ function startAnime() {
 function changeText() {
     for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].checked) {
-            movement = i * 400;
+            width = document.getElementById('work-flex').clientWidth
+            movement = i * width;
             paragraph.style.marginLeft = `-${movement}px`;
         };
     };
