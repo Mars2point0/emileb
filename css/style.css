@@ -657,7 +657,7 @@ i {
         margin-left: -75px;
     }
     #navigation {
-        flex-direction: column;
+        display: none;
     }
     #navbar {
         height: 100px;
