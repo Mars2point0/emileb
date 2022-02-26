@@ -660,6 +660,7 @@ i {
         display: none;
     }
     #navbar {
+        width: 120%;
         height: 100px;
         overflow: hidden;
     }
