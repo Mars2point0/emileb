@@ -13,6 +13,7 @@ body {
     margin: 0;
     font: bolder 11px/1.4 'Open Sans', arial, sans-serif;
     color: white;
+    background: linear-gradient(283.55deg, #01008A 0%, #0169F0 100%);
 }
 
 hr {
@@ -144,17 +145,23 @@ i {
 
 /* ABOUT */
 
+#holder {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 0%, rgba(3, 93, 229, 0) 100%);
+}
+
 #about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(179.9deg, #000000 0.09%, #01008A 21.59%);
+    background: transparent;
 }
 
 #about-section-left {
     display: flex;
     flex-direction: column;
-    margin: 200px auto auto 100px;
+    margin: 100px auto auto 100px;
     width: 50%;
     color: #fff;
 }
@@ -182,7 +189,7 @@ i {
 
 #about-section-right {
     bottom: 0;
-    margin: 200px 0px 0 0;
+    margin: 100px 0px 0 0;
     width: 50%;
 }
 
@@ -197,7 +204,7 @@ i {
     padding: 200px 100px 100px;
     display: flex;
     flex-direction: row;
-    background: #000000;
+    background: rgba(1, 0, 138, 0.13);
     align-items: center;
     justify-content: space-between;
 }
@@ -293,14 +300,13 @@ i {
 }
 
 .flip-card-front {
-    background-color: #000;
-    color: black;
+    background-color: transparent;
 }
 
 .flip-card-back {
     display: flex;
     flex-direction: column;
-    background-color: #01008A;
+    background-color: transparent;
     border-radius: 5px;
     color: white;
     transform: rotateY(180deg);
@@ -404,7 +410,7 @@ i {
     display: flex;
     padding: 200px 100px 100px 100px;
     justify-content: space-between;
-    background: linear-gradient(283.55deg, #01008A 0%, #0169F0 100%);
+    background: transparent;
 }
 
 #work-flex {
@@ -430,7 +436,7 @@ i {
 
 #contact {
     color: white;
-    background-color: #20202B;
+    background-color: #01008A;
     padding: 50px 75px 100px 100px;
     display: flex;
     justify-content: space-between;
@@ -443,7 +449,7 @@ i {
 
 .contact a,
 .contact h3 {
-    color: rgb(4, 164, 228);
+    color: rgb(136, 136, 136);
     font-size: 18px;
     text-decoration: none;
     margin-top: 11px;
